@@ -196,10 +196,6 @@ p {
   color: var(--accent-color);
 }
 
-/* 
-Сделать контакты
- */
-
 /* тело страницы ***************************************/
 /* банер **************************/
 .section-baner {
@@ -210,7 +206,7 @@ p {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(/images/svg/hero.jpg);
+    url(./images/svg/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
