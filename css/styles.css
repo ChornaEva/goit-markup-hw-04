@@ -196,10 +196,17 @@ p {
   color: var(--accent-color);
 }
 
+.contacts-link:hover .icon-envelope,
+.contacts-link:focus .icon-envelope,
+.contacts-link:hover .icon-phone,
+.contacts-link:focus .icon-phone {
+  fill: var(--accent-color);
+}
+
 /* тело страницы ***************************************/
 /* банер **************************/
 .section-baner {
-  min-width: 1600px;
+  max-width: 1600px;
 
   background-color: #2f303a;
   background-image: linear-gradient(
@@ -212,6 +219,8 @@ p {
   background-size: contain;
 
   padding: 200px 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .title-baner {
   font-weight: 900;
@@ -475,7 +484,7 @@ p {
 }
 
 .sociale-link-dark:hover,
-.sociale-link-dark:hover {
+.sociale-link-dark:focus {
   background: var(--accent-color);
 }
 
@@ -488,6 +497,7 @@ p {
   justify-content: center;
   margin-bottom: 50px;
 }
+
 .filter-button {
   font-family: inherit;
   font-style: normal;
@@ -516,6 +526,8 @@ p {
 .filter-button:focus {
   background: var(--accent-color);
   color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .type-list {
@@ -529,6 +541,11 @@ p {
   flex-basis: calc((100% - 3 * 30px) / 3);
   margin-top: 30px;
   margin-left: 30px;
+}
+.type-item:hover,
+.type-item:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .type-link {
